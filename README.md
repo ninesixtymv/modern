@@ -10,7 +10,7 @@ Laravel Nova theme helper that add CSS classes to the main nova views elements, 
 You can install the nova theme helper into a Laravel app that uses [Nova](https://nova.laravel.com) via composer:
 
 ```bash
-composer require gregoriohc/laravel-nova-theme-classify
+composer require ninesixtymv/modern
 ```
 
 ## Usage
@@ -21,10 +21,10 @@ You can use this theme helper in three ways:
 
 First, publish the package skeleton stylesheet:
 ```bash
-php artisan vendor:publish --provider="Gregoriohc\LaravelNovaThemeClassify\ThemeServiceProvider"
+php artisan vendor:publish --provider="Ninesixtymv\Modern\ThemeServiceProvider"
 ```
 
-Then, update the stylesheet with your custom styles. The file is located in `resources/css/vendor/laravel-nova-theme-classify/theme.css`
+Then, update the stylesheet with your custom styles. The file is located in `resources/css/vendor/modern/theme.css`
 
 ### B) Creating your own theme and adding this one as a dependency
 
@@ -37,16 +37,12 @@ Then, customize the CSS of your own theme, using the CSS classes provided by thi
 If you want to public release your theme, don't forget to add this as a dependency:
 ```bash
 cd path/to/MyCustomTheme
-composer require gregoriohc/laravel-nova-theme-classify
+composer require ninesixtymv/modern
 ```
 
 ### C) Using it as a base to create your own theme
 
 Simply, clone this repo, and modify it to create your custom theme.
-
-## Credits
-
-- [Gregorio Hernández Caso](https://github.com/gregoriohc)
 
 ## License
 
